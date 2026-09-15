@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 1: Menú, Divs y Galerías</title>
+  
+  <!-- Enlace para conectar la hoja de estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =======================================================
+       CONCEPTO 1: MENÚ DE NAVEGACIÓN CON <ul> Y <li>
+       Usamos una lista para dar estructura jerárquica y semántica.
+       ======================================================= -->
+  <header class="header">
+    <div class="logo">MiPortafolio</div>
+
+    <nav class="nav">
+      <!-- La etiqueta <ul> define la lista no ordenada -->
+      <ul class="nav-list">
+        <!-- Cada <li> es un elemento individual del menú -->
+        <li class="nav-item"><a href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a href="#destacado">Imagen Destacada</a></li>
+        <li class="nav-item"><a href="#galeria">Galería</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenedor principal para organizar la página -->
+  <main class="content-container">
+
+    <!-- =======================================================
+         CONCEPTO 2: CENTRADO DE IMÁGENES (Ejemplo Individual)
+         Demuestra cómo centrar una imagen sola usando contenedores o márgenes.
+         ======================================================= -->
+    <section id="destacado" class="section">
+      <h2>1. Centrado de Imagen Individual</h2>
+      <p>A continuación se muestra una imagen centrada perfectamente dentro de un contenedor.</p>
+      
+      <!-- Usamos un <div> como contenedor para aislar y centrar la imagen -->
+      <div class="image-center-box">
+        <img 
+          src="https://picsum.photos/id/1015/600/350" 
+          alt="Paisaje de montañas" 
+          class="centered-img"
+        >
+      </div>
+    </section>
+
+    <!-- =======================================================
+         CONCEPTO 3: GALERÍA DE IMÁGENES CON <div>
+         Estructuramos una cuadrícula mediante contenedores <div> repetitivos.
+         ======================================================= -->
+    <section id="galeria" class="section">
+      <h2>2. Galería de Imágenes Responsive</h2>
+      <p>Organizamos varias fotos utilizando un div contenedor principal y divs secundarios.</p>
+
+      <!-- DIV CONTENEDOR DE LA GALERÍA -->
+      <div class="gallery-grid">
+        
+        <!-- DIV TARJETA 1 -->
+        <div class="gallery-card">
+          <img src="https://picsum.photos/id/1025/400/300" alt="Perrito en cobija">
+          <div class="gallery-info">
+            <h3>Naturaleza 1</h3>
+            <p>Captura en el bosque.</p>
+          </div>
+        </div>
+
+        <!-- DIV TARJETA 2 -->
+        <div class="gallery-card">
+          <img src="https://picsum.photos/id/1069/400/300" alt="Medusa en el agua">
+          <div class="gallery-info">
+            <h3>Vida Marina</h3>
+            <p>Fotografía submarina.</p>
+          </div>
+        </div>
+
+        <!-- DIV TARJETA 3 -->
+        <div class="gallery-card">
+          <img src="https://picsum.photos/id/1040/400/300" alt="Castillo antiguo">
+          <div class="gallery-info">
+            <h3>Arquitectura</h3>
+            <p>Edificios históricos.</p>
+          </div>
+        </div>
+
+        <!-- DIV TARJETA 4 -->
+        <div class="gallery-card">
+          <img src="https://picsum.photos/id/1039/400/300" alt="Cascada">
+          <div class="gallery-info">
+            <h3>Cascadas</h3>
+            <p>Agua en movimiento.</p>
+          </div>
+        </div>
+
+      </div> <!-- Fin del div .gallery-grid -->
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Clase Práctica - HTML5 y CSS3</p>
+  </footer>
+
+</body>
+</html>
